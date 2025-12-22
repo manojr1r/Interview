@@ -23,6 +23,22 @@ public static void main(String[] args){
     int highNumber = combinedArray[0];
     int secondHighNumber = combinedArray[0];
 
+    // Step 1: find highest
+    int highest = combinedArray[0];
+    for (int i = 1; i < combinedArray.length; i++) {
+        if (combinedArray[i] > highest) {
+            highest = combinedArray[i];
+        }
+    }
+
+// Step 2: find second highest
+    int secondHighest = Integer.MIN_VALUE;
+    for (int i = 0; i < combinedArray.length; i++) {
+        if (combinedArray[i] != highest && combinedArray[i] > secondHighest) {
+            secondHighest = combinedArray[i];
+        }
+    }
+
     for (int j : combinedArray) {
         if (j > highNumber) {
             secondHighNumber = highNumber;
