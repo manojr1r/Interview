@@ -1,4 +1,4 @@
-package org.example;
+package org.example.old;
 
 public class ServiceNow2 {
     // 72 seats

@@ -1,4 +1,4 @@
-package org.example.pega;
+package org.example.old.pega;
 
 public class Pega {
     static void main(String[] args) {
